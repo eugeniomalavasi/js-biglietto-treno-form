@@ -44,11 +44,11 @@ sendBtn.addEventListener("click", function () {
     // calcolo totale sconto
     let discount = 0;
 
-    if (ageValue = "minorenne") {
+    if (ageValue === "minorenne") {
         discount = 20;
-    } else if (ageValue = "over 65") {
+    } else if (ageValue === "over 65") {
         discount = 40;
-    } else if (ageValue = "maggiorenne") {
+    } else if (ageValue === "maggiorenne") {
         discount = 0;
     }
 
@@ -74,6 +74,15 @@ sendBtn.addEventListener("click", function () {
     random10000 = Math.floor((Math.random() * 10000) + 1);
     let rnd10000out = document.getElementById("rnd_10000").innerHTML = random10000;
 
+    const ticketType = document.getElementById("ticket_type");
+    if (ageValue === "minorenne" || ageValue === "over 65") {
+        let ticketTypeOut = ("Biglietto Scontato")
+        console.log(ticketTypeOut);
+        ticketTypeOut = document.getElementById("ticket_type").innerHTML = ticketTypeOut;
+    } else if (ageValue === "maggiorenne") {
+        ticketTypeOut = ("Biglietto Standard")
+        ticketTypeOut = document.getElementById("ticket_type").innerHTML = ticketTypeOut;
+    }
 
     // OUTPUT
     // stampa prezzo biglietto finale
