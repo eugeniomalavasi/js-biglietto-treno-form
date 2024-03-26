@@ -20,9 +20,9 @@ Aggiungere un event listener al bottone invia, che farà accadere le seguenti co
     discount = 0
 
 ## Output
-    DURANTE LA FASE DI PROGETTAZIONE:
-        - tutti gli output devono essere in console log
-    DOPO AVER VERIFICATO IL CORRETTO FUNZIONAMENTO DI TUTTO IL PROGRAMMA:
-        - stampare in pagina tutti i dati 
-        - stilizzare la pagina a piacimento
-        - tutti i dati devono venire stampati in forma umana
+DURANTE LA FASE DI PROGETTAZIONE:
+    - tutti gli output devono essere in console log
+DOPO AVER VERIFICATO IL CORRETTO FUNZIONAMENTO DI TUTTO IL PROGRAMMA:
+    - stampare in pagina tutti i dati 
+    - stilizzare la pagina a piacimento
+    - tutti i dati devono venire stampati in forma umana
