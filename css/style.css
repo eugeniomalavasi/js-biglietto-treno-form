@@ -1,0 +1,47 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightblue;
+    font-family: "Montserrat", sans-serif;
+}
+/* utilities */
+.text_center {
+    text-align: center;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.user_input {
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: lightslategray;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

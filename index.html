@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>BoolTrain</title>
 </head>
+
 <body>
-    <!-- km input -->
-    <label for="user_km">Inserisci quanti km vuoi percorrere</label>
-    <input type="number" id="user_km">
+    <h2 class="text_center mt-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="user_input">
+        <div class="container">
+            <!-- user name and surname -->
+            <div class="name_input text_center">
+                <label for="user_name">Nome Cognome</label>
+                <input type="text" id="user_name">
+            </div>
+            <!-- km input -->
+            <div class="distance_input text_center">
+                <label for="user_km">Inserisci quanti km vuoi percorrere</label>
+                <input type="number" id="user_km">
+            </div>
+            <!-- age input -->
+            <div class="age_input text_center">
+                <label for="age">Inserisci la tua età</label>
+                <input type="number" id="age">
+            </div>
+        </div>
+        <!-- send button -->
+        <div class="btn_container">
+            <button class="btn" id="send_button">Genera</button>
+            <button class="btn">Annulla</button>
+        </div>
+    </div>
 
-    <!-- age input -->
-    <label for="age">Inserisci la tua età</label>
-    <input type="number" id="age">
-
-    <!-- send button -->
-    <button id="send_button">Invia</button>
+    <h2 class="text_center mt-3">IL TUO BIGLIETTO</h2>
+    <div class="user_input">
+        <div class="container">
+            <!-- user name and surname -->
+            <div class="name_input text_center">
+                <label for="user_name">Nome Cognome</label>
+                <input type="text" id="user_name">
+            </div>
+            <!-- km input -->
+            <div class="distance_input text_center">
+                <label for="user_km">Inserisci quanti km vuoi percorrere</label>
+                <input type="number" id="user_km">
+            </div>
+            <!-- age input -->
+            <div class="age_input text_center">
+                <label for="age">Inserisci la tua età</label>
+                <input type="number" id="age">
+            </div>
+        </div>
+        <!-- send button -->
+        <div class="btn_container">
+            <button class="btn" id="send_button">Genera</button>
+            <button class="btn">Annulla</button>
+        </div>
+    </div>
 
     <!-- js script -->
     <script src="./js/script.js"></script>
 </body>
+
 </html>
