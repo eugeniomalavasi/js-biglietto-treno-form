@@ -22,11 +22,11 @@ console.log(userAge , typeof userAge);
 const kmValue = parseInt(userKm.value); // number
 console.log(kmValue, typeof kmValue);
 // raccolta input age
-let ageValue = parseInt(userAge.value) // number
+let ageValue = (userAge.value) // string
 console.log(ageValue, typeof ageValue);
 // raccolta input name
 const nameValue = (userName.value);
-console.log(nameValue, typeof nameValue); //object
+console.log(nameValue, typeof nameValue); 
 // prezzo al km
 const priceKm = 0.21; // number
 
@@ -38,20 +38,42 @@ console.log(baseTicket, "prezzo biglietto base");
 // calcolo totale sconto
 let discount = 0;
 
-if (ageValue < 18) {
+if (ageValue = "minorenne") {
     discount = 20;
-} else if (ageValue > 65) {
+} else if (ageValue = "over 65" ) {
     discount = 40;
-} 
+} else if (ageValue = "maggiorenne") {
+    discount = 0;
+}
 
+// calcolo sconto
 let totalDiscount = (baseTicket * discount) / 100;
 console.log(totalDiscount, "ammontare dello sconto");
 
+// calcolo prezzo biglietto finale
 let ticketPrice = baseTicket - totalDiscount;
 console.log(ticketPrice, "prezzo finale del biglietto");
-// OUTPUT
-const priceOut = document.getElementById("price_out").innerHTML = ticketPrice + "€";
-console.log(priceOut, "ciao sono price out");
 
+// rendere il ticket visibile
+const ticketDisplay = document.getElementById("ticket"); 
+ticketDisplay.classList.add("active")
+
+// numero casuale da 1 a 10
+let random10 = document.getElementById("rnd_10");
+random10 =  Math.floor((Math.random() * 10) + 1);
+let rnd10out = document.getElementById("rnd_10").innerHTML = random10;
+
+// numero casuale da 1 a 10000
+let random10000 = document.getElementById("rnd_10000");
+random10000 =  Math.floor((Math.random() * 10000) + 1);
+let rnd10000out = document.getElementById("rnd_10000").innerHTML = random10000;
+
+// OUTPUT
+// stampa prezzo biglietto finale
+const priceOut = document.getElementById("price_out").innerHTML = ticketPrice.toFixed(2) + "€";
+console.log(priceOut, "ciao sono price out");
+// stampa del nome passeggero
 const passengerOut = document.querySelector (".name_out_container p").innerHTML = nameValue;
+
+
 })

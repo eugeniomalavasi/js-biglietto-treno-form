@@ -20,6 +20,12 @@ body {
     display: flex;
 }
 
+.d-none {
+    display: none;
+}
+.active {
+    display: block;
+}
 .user_input {
     background-color: white;
     border-radius: 20px;

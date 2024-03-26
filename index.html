@@ -27,9 +27,18 @@
                 <input type="number" id="user_km">
             </div>
             <!-- age input -->
-            <div class="age_input text_center">
+            <!-- <div class="age_input text_center">
                 <label for="age">Inserisci la tua età</label>
-                <input type="number" id="age">
+                <input type="select" id="age" placeholder="clicca per scegliere">
+            </div> -->
+
+            <div class="age_input text_center">
+                <label for="age">Fascia di età</label>
+                <select name="age" id="age">
+                    <option>maggiorenne</option>
+                    <option>minorenne</option>
+                    <option>over 65</option>
+                </select>
             </div>
         </div>
         <!-- send button -->
@@ -39,26 +48,28 @@
         </div>
     </div>
 
-    <h2 class="text_center mt-3">IL TUO BIGLIETTO</h2>
-    <div class="user_input flex">
-        <div class="name_out_container">
-            <h3>Nome Passeggero</h3>
-            <p id="passenger_name"></p>
+    <div class="d-none" id="ticket">
+        <h2 class="text_center mt-3">IL TUO BIGLIETTO</h2>
+        <div class="user_input flex">
+            <div class="name_out_container">
+                <h3>Nome Passeggero</h3>
+                <p id="passenger_name"></p>
+            </div>
+            <table class="text_center">
+                <tr>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo Biglietto</th>
+                </tr>
+                <tr>
+                    <td>Biglietto Standard</td>
+                    <td id="rnd_10">5</td>
+                    <td id="rnd_10000">92911</td>
+                    <td id="price_out"></td>
+                </tr>
+            </table>
         </div>
-        <table class="text_center">
-            <tr>
-                <th>Offerta</th>
-                <th>Carrozza</th>
-                <th>Codice CP</th>
-                <th>Costo Biglietto</th>
-            </tr>
-            <tr>
-                <td>Biglietto Standard</td>
-                <td>5</td>
-                <td>92911</td>
-                <td id="price_out"></td>
-            </tr>
-        </table>
     </div>
 
     <!-- js script -->
