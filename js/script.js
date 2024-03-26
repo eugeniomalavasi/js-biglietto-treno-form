@@ -44,5 +44,6 @@ console.log(totalDiscount, "ammontare dello sconto");
 let ticketPrice = baseTicket - totalDiscount;
 console.log(ticketPrice, "prezzo finale del biglietto");
 // OUTPUT
-
+const priceOut = document.getElementById("price_out").innerHTML = ticketPrice + "€";
+console.log(priceOut, "ciao sono price out");
 })
