@@ -16,6 +16,10 @@ body {
     margin-top: 3rem;
 }
 
+.flex {
+    display: flex;
+}
+
 .user_input {
     background-color: white;
     border-radius: 20px;
